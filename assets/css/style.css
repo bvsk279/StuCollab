@@ -8,6 +8,11 @@
   background-color: grey
 }
 
+.nav-bg{
+  background-color: blue;
+  color:white;
+}
+
 .content-navv{
   padding:15px;
 }
