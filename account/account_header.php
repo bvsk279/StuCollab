@@ -17,10 +17,10 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 
     <!-- JS -->
-    <script src="./assets/js/script.js"></script>
+    <script src="../assets/js/script.js"></script>
 
     <title>StuCollab</title>
 </head>
