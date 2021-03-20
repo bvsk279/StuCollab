@@ -1,8 +1,8 @@
 @Author: sivakrishna
 Developers :<br>
-Siva Krishna <br> - Vellore Institute of Technology
-Aditya Agarwal - University of Manchester
-<br>
+Siva Krishna  - Vellore Institute of Technology <br>
+Aditya Agarwal - University of Manchester	<br>
+
 
 # StuCollab is a platform which allows students to connect and collaborate with other students within their college. 
 Like-minded people who share the same passion, interests and ideologies can connect and work together. 
