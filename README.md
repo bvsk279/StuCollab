@@ -1,7 +1,11 @@
 @Author: sivakrishna
+Developers :<br>
+Siva Krishna <br> - Vellore Institute of Technology
+Aditya Agarwal - University of Manchester
+<br>
 
-# StuCollab is a platform which allows students to connect and collaborate among themselves and work together within a college. 
-Like-minded people who share the same passion, interests and ideologies can connect and work along. 
-Lets you connect to students from any branch or year.
-Most effecient way to find out the right candidate with the required skillset for your project/endeavour
-Strengthens student relationships and increases their producitivity.
+# StuCollab is a platform which allows students to connect and collaborate with other students within their college. 
+Like-minded people who share the same passion, interests and ideologies can connect and work together. 
+It lets you connect to students irrespective of their branch or year.
+This app aims at becoming the most efficient means to find out the right work partner for your project/endeavour
+It aims at strengthening student relationships and increasing their producitivity.
