@@ -8,72 +8,8 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-        }
-        body{
-            width: 100%;
-            font-family: "Libre Franklin";
-            max-width: 100%;
-            /* overflow-x: hidden; */
-        }
-        header{
-            background-color: #8A8FFF;
-            height: 70px;
-            width: 100%;
-            display: flex;
-            align-items: center;
-        }
-        .header-wrapper{
-            padding: 0px 80px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-        }
-        header>div{
-            display: inline-block;
-        }
-        header .logo{
-            color: #563434;
-            font-size: 25px;
-            font-weight: 700;
-            user-select: none;
-        }
-        header .logo>span{
-            color: #fff;
-        }
-        .header-right{
-            display: flex;
-            align-items: center;
-            padding: 10px 0px;
-        }
-        /* nav-bar styles */
-        #nav-bar a.nav-link{
-            text-decoration: none;
-            color: #fff;
-        }
-        #nav-bar{
-            display: inline-block;
-        }
-        #nav-bar a.nav-link{
-            margin: 25px;
-            font-size: 1.1em;
-            font-weight: 500;
-        }
-
-        
-        .profile-picture{
-            width: 28px;
-            height: 28px;
-            border-radius: 50%;
-            background-color: #000;
-            display: inline-block;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/home.css">
 </head>
 <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -92,7 +28,135 @@
         </div>
     </header>
     <div class="body-main">
-        
+        <div class="body-wrapper">
+            <div class="search-col">
+                <div class="search">
+                    <input type="text" class="searchTerm" placeholder="Find People | Skills(ex: Devops, Nodejs)  |  Activitys(ex: Dance , Yoga)  |  Events(ex: Hackathon) ">
+                    <button type="submit" class="searchButton">
+                      <i class="fa fa-search"></i>
+                    </button>
+                 </div>
+                 <div class="new-collab-btn">
+                     <button>Create New Collab</button>
+                 </div>
+            </div>
+
+
+            <hr class="content-gap-hr">
+
+            <div class="sections">
+                <section class="activity_sec">
+                    <h4 class="section-head">Activities</h4>
+                    <div class="elements__wrapper">
+                        <div class="element_item">
+                            <h4 class="title">Zumba Dance </h4>
+                            <p class="post_detail">by <a href="#" class="creator">Matheev</a> at <span class="posted_on">20th Mar, 12:00AM</span></p>
+                            <p class="desc">&ensp;Dance keep my Motivation Up. Join the conference & Lets dance together.</p>
+
+                            <p class="start_time"><b>Startes on:</b> <span>(sat)20th Mar, 6:00PM</span></p>
+
+                            <p class="location"><b>Join at:</b> <a href="#">www.xyz.com/123</a></p>
+                            <div class="tags"><span class="tag_elm">Video Conference</span></div>
+                        </div>
+
+                        <div class="element_item">
+                            <h4 class="title">Zumba Dance </h4>
+                            <p class="post_detail">by <a href="#" class="creator">Matheev</a> at <span class="posted_on">20th Mar, 12:00AM</span></p>
+                            <p class="desc">&ensp;Dance keep my Motivation Up. Join the conference & Lets dance together.</p>
+
+                            <p class="start_time"><b>Startes on:</b> <span>(sat)20th Mar, 6:00PM</span></p>
+
+                            <p class="location"><b>Join at:</b> <a href="#">www.xyz.com/123</a></p>
+                            <div class="tags"><span class="tag_elm">Video Conference</span></div>
+                        </div>
+
+                        <div class="element_item"></div>
+                        <div class="element_item"></div>
+                    </div>
+                </section>
+
+                <section class="projects">
+                    <h4 class="section-head">Join a Project</h4>
+                    <div class="elements__wrapper">
+                        <div class="element_item">
+                            <div class="upper_part">
+                                <h3 class="title">A Student Collaboration Platform</h3>
+                                <div class="posted_on">Posted on <span>20 Mar 2020</span></div>
+                            </div>
+                            <div class="lower_part">
+                                <div class="tech_stack">
+                                    <h4>Tech Stack</h4>
+                                    <div class="tech_stack__wrapperr">
+                                        <span class="stack_elm">PHP</span>
+                                        <span class="stack_elm">Javascript</span>
+                                        <span class="stack_elm">Angular</span>
+                                    </div>
+                                </div>
+                                <div class="action-btn">
+                                    <button>Explore Project</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="element_item">
+                            <div class="upper_part">
+                                <h3 class="title">A Student Collaboration Platform</h3>
+                                <div class="posted_on">Posted on <span>20 Mar 2020</span></div>
+                            </div>
+                            <div class="lower_part">
+                                <div class="tech_stack">
+                                    <h4>Tech Stack</h4>
+                                    <div class="tech_stack__wrapperr">
+                                        <span class="stack_elm">PHP</span>
+                                        <span class="stack_elm">Javascript</span>
+                                        <span class="stack_elm">Angular</span>
+                                    </div>
+                                </div>
+                                <div class="action-btn">
+                                    <button>Explore Project</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="element_item">
+                            <div class="upper_part">
+                                <h3 class="title">A Student Collaboration Platform</h3>
+                                <div class="posted_on">Posted on <span>20 Mar 2020</span></div>
+                            </div>
+                            <div class="lower_part">
+                                <div class="tech_stack">
+                                    <h4>Tech Stack</h4>
+                                    <div class="tech_stack__wrapperr">
+                                        <span class="stack_elm">PHP</span>
+                                        <span class="stack_elm">Javascript</span>
+                                        <span class="stack_elm">Angular</span>
+                                    </div>
+                                </div>
+                                <div class="action-btn">
+                                    <button>Explore Project</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <style>
+                    section.events .element_item{
+                        height: 300px;
+                    }
+                </style>
+                <section class="events">
+                    <h4 class="section-head">Events </h4>
+                    <div class="elements__wrapper">
+                        <div class="element_item"></div>
+                        <div class="element_item"></div>
+                        <div class="element_item"></div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
     </div>
 </body>
 </html>
