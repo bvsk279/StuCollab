@@ -71,3 +71,49 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+
+
+CREATE TABLE `ACTIVITIES`(
+	`activity_id` int auto_increment primary key,
+    `user_id` int not null,
+    `activity_title` text not null,
+    `activity_desc` text not null,
+    `activity_type` varchar(10) not null,
+    `starts` datetime not null,
+    `link` varchar(255),
+    `location` varchar(255),
+    `posted_on` datetime not null,
+	foreign key(`user_id`) references USERS(`user_id`)
+);
+
+-- @activity_type = either 'VC' or 'PA'; (Video Conferencing or physical activity)
+
+insert into `ACTIVITIES`(`user_id`,`activity_title`,`activity_desc`,`activity_type`,`starts`,`link`,`posted_on`) values(1, "Zumba Dance", "Dance keep my Motivation Up. Join the conference & Lets dance together.", "VC", "2021-03-21 06:00:00", "www.xyz.com/123", "2021-03-20 12:00:00");
+
+CREATE TABLE `PROJECTS`(
+	`project_id` int auto_increment primary key,
+    `user_id` int not null,
+    `project_title` text not null,
+    `project_desc` text not null,
+    `tech_stack` varchar(150),
+    `posted_on` datetime not null,
+    foreign key(`user_id`) references USERS(`user_id`)
+);
+
+insert into `PROJECTS`(`user_id`,`project_title`,`project_desc`,`tech_stack`,`posted_on`) values(1, "A Student Collaboration Platform", "A platform which allows students to connect and collaborate among themselves and work together. Like-minded people who share the same passion, interests and ideologies can connect and work along. Lets you connect to students from any branch or year within a college.", "PHP, Javascript, Angular", "2021-03-20 04:15:00");
+
+CREATE TABLE `EVENTS`(
+	`event_id` int auto_increment primary key,
+    `user_id` int not null,
+    `event_title` text not null,
+    `event_desc` text not null,
+    `starts` datetime not null,
+    `ends` datetime not null,
+    `web_link` datetime not null,
+    `location` varchar(255),
+    `enrollments_count` int,
+    `posted_on` datetime not null,
+    foreign key(`user_id`) references USERS(`user_id`)
+);
